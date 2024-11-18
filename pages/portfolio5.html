@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arabinda Krishna Kansakar</title>
+    <meta name="author" content="Arabinda Krishna Kansakar">
+    <meta name="description" content="HTML Document">
+    <meta name="keywords" content="portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Css Section Starts-->
+    <style>
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      html{
+        font-size: 10px;
+        font-family: Verdana, Courier New;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      .container{
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #Aviana{
+        background-image: url(../images/background2.jpg);
+        background-size: cover;
+        background-position: top center;
+        position: fixed;
+      }
+
+      #Aviana:after{
+        content:'';
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: .7;
+        z-index: -1;
+      }
+
+      #Aviana .Aviana{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 50px;
+        justify-content: flex-start;
+      }
+
+      #Aviana h1{
+        display: block;
+        width: fit-content;
+        font-size: 64px;
+        position: relative;
+        color: transparent;
+        animation: text_reveal .5s ease forwards;
+        animation-delay: 0.8s;
+      }
+
+      #Aviana h1:nth-child(1){
+        animation-delay: 0.8s;
+      }
+
+      #Aviana h1:nth-child(2){
+        animation-delay: 1.8s;
+      }
+
+      #Aviana h1:nth-child(3){
+        animation: text_reveal_name .5s ease forwards;
+        animation-delay: 2.8s;
+      }
+
+      #Aviana h1 span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: rgb(171, 34, 171);
+        animation: text_reveal_box 1s ease;
+        animation-delay: .3s;
+      }
+
+      #Aviana h1:nth-child(1) span{
+        animation-delay: .3s;
+      }
+
+      #Aviana h1:nth-child(2) span{
+        animation-delay: 1.3s;
+      }
+
+      #Aviana h1:nth-child(3) span{
+        animation-delay: 2.3s;
+      }
+
+      #Aviana .cta{
+        display: inline-block;
+        padding: 10px 30px;
+        color: rgb(171, 34, 171);
+        background-color: transparent;
+        border: 2px solid rgb(171, 34, 171);
+        font-size: 32px;
+        text-transform: uppercase;
+        letter-spacing: 1.6px;
+        margin-top: 30px;
+        transition: .3s ease;
+        transition-property: background-color, color;
+        border-radius: 5px;
+      }
+
+      #Aviana .cta:hover{
+        color: white;
+        background-color:rgb(171, 34, 171);
+      }
+
+      /* Key Frames Starts */
+      @keyframes text_reveal_box{
+        50%{
+          width: 100%;
+          left: 0;
+        }
+
+        100%{
+          width: 0;
+          left:100%;
+        }
+      }
+      @keyframes text_reveal{
+        100%{
+          color: whitesmoke;
+        }
+      }
+
+      @keyframes text_reveal_name{
+        100%{
+          color: rgb(171, 34, 171);
+          font-weight: 500px;
+        }
+      }
+      /* Key Frames Ends */
+
+      body{
+        color:#333332;
+        font-size:18px;
+        font-weight:400;
+        line-height:1.4;
+        background-color: rgb(219, 211, 211);
+      }
+
+      h1{
+        color:rgba(0,0,0,.75);
+      }
+
+      .right{
+        float:right;
+        height:100%;
+        position:relative;
+        width:66.66%;
+      }
+
+      .me-img{
+        background:url(../images/Aviana\ Phoenix.jpg) no-repeat;
+        background-size:100%;
+        border-radius:100%;
+        height:150px;
+        margin:0 auto;
+        position:relative;
+        width:150px;
+      }
+
+      .name-text{
+        margin:20px auto;
+        width:85%;
+        text-align: center;
+      }
+
+      .inner{
+        margin:0 auto;
+        max-width:975px;
+        padding:50px;
+      }
+
+
+      .inner p{
+        color: rgba(0,0,0,.75);
+      }
+
+      .inner p em{
+        color:rgba(0,0,0,.75);
+      }
+
+      .inner section{
+        margin:50px auto;
+      }
+
+      .cta{
+        display: inline-block;
+        color: rgb(171, 34, 171);
+        background-color: transparent;
+        border: 2px solid rgb(171, 34, 171);
+        font-size: 20px;
+        padding: 5px 5px;
+        transition: .3s ease;
+        transition-property: background-color, color;
+        border-radius: 5px;
+      }
+
+      .cta:hover{
+        color: white;
+        background-color:rgb(171, 34, 171);
+      }
+    </style>
+    <!--Css Section Ends-->
+  </head>
+
+  <body>
+    <!--Left Section Starts-->
+    <section id="Aviana">
+      <div class="Aviana container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Arabinda <span></span></h1>
+          <a href="Arabinda's CV.html" type="button" class="cta">Get CV</a>    
+        </div>     
+      </div>
+    </section>
+    <!--Left Section Ends-->
+
+    <!--Right Section Starts-->
+    <div class="right">
+      <div class="inner">
+        <!--About Me Starts-->
+        <div style="margin-top: 50px;">
+          <div class="me-img"></div>
+          <div class="name-text">
+            <h1>Arabinda Krishna Kansakar</h1>
+            <p>Kathmandu,Nepal</p>
+            <p>Avianaphoenix@gmail.com</p>
+            <p>(+977) 9841-231231</p>
+          </div>
+        </div> 
+        <!--About Me Ends-->
+
+        <!--Introduction Section Starts-->
+        <section>
+          <h1>Introduction</h1>
+          <p>
+            Arabinda Krishna Kansakar presents his portfolio as a demonstration of his 
+            abilities and past experiences. The portfolio aims to emphasize his strengths 
+            and showcase his dedication to excellence. It also provides an insight into Arabinda's 
+            journey as a computer science student and the difficulties he faced and overcame.
+          </p>
+        </section>
+        <!--Introduction Section Ends-->
+
+        <!--Eduction Section Starts-->
+        <section>
+          <h1>Education</h1>
+          <p>2020 - Graduated Grade 10 (SEE) from Bijeshwori Secondary School</p>
+          <p>2022 - Graduated +2 Science from United Academy College</p>
+          <p>Current - Studying BSc (Hons) Computing at Islington College</p>
+        </section>
+        <!--Eduction Section Ends-->
+
+        <!--Skill Section Starts-->
+        <section>
+          <h1>My Skills</h1>
+          <p>1 - Web Page Development</p>
+          <p>2 - Adobe Photoshop</p>
+          <p>3 - HTML / CSS</p>
+          <p>4 - Database Handling</p>
+          <p>5 - Affinity Photo</p> 
+          <p>6 - Sound Designer</p> 
+        </section>
+        <!--Skill Section Ends-->
+
+        <!--Work Experience Section Starts-->
+        <section>
+          <h1>Work Experience</h1>
+          <p>Worked In Tunnel For Music production For 3 Years.</p>
+          <p>Currently A Front-End Deveoper</p>
+        </section>
+        <!--Work Experience Section Ends-->
+
+        <!--Interests Section Starts-->
+        <section>
+          <h1>My Interests</h1>
+          <p>1 - Gaming</p>
+          <p>2 - Photography</p>
+          <p>3 - Music Production</p>
+          <p>4 - Hiking / Treking</p>
+        </section>
+        <!--Interests Section Ends-->
+
+        <!--Links Section Starts-->
+        <section>
+          <h1>Links</h1>
+          <a href="https://www.instagram.com/avianaphx/" type="button" target="_blank" class="cta">Instagram</a> 
+          <a href="https://www.facebook.com/arabinda.kansakar" type="button" target="_blank" class="cta">Facebook</a> 
+          <a href="aboutus.html" type="button" target="_blank" class="cta">Go Back</a> 
+        </section>
+        <!--Links Section Ends-->
+      </div>   
+    </div> 
+    <!--Right Section Starts-->
+  </body>
+</html>

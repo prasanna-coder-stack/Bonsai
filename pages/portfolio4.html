@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+      }
+
+      .header{
+          margin-right: 20px;
+          min-height: 100vh;
+          width: 100%;
+          background: #000;
+          color: #fff;
+          position: relative;
+      }
+
+      nav{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          z-index: 1;
+      }
+
+      .logo{
+          text-decoration: none;
+          color: rgb(183, 174, 19);
+          font-size: 30px;
+          font-weight: lighter;
+          padding: 5px;
+          padding-top: 10px;
+          padding-left: 10%;
+      }
+
+      .nav-links{
+          text-align: right;
+          background: #ca3535;
+          padding: 15px 30px;
+          border-bottom-left-radius: 18px;
+      }
+
+      .nav-links ul li{
+          list-style: none;
+          display: inline-block;
+          padding: 10px 25px;
+      }
+
+      .nav-links ul li a{
+          color: #fff;
+          text-decoration: none;
+          font-size: 18px;
+      }
+
+      .nav-links ul li a:hover{
+          color: #000;
+      }
+
+      .left-sidebar{
+          width: 20%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: #000;
+      }
+
+      .row{
+          padding: 0 10%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          position: relative;
+          margin-top: -1%;
+      }
+
+      .left-col{
+          flex-basis: 40%;
+      }
+
+      .right-col{
+          flex-basis: 55%;
+      }
+
+      .left-col img{
+          padding: 70px;
+        border-radius: 200px;
+          width: 400px;
+          cursor: pointer;
+          filter: grayscale(0);
+          transition: 1s;
+      }
+
+      .left-col img:hover{
+          filter: grayscale(1);
+      }
+
+      .right-col h1{
+          font-style: 35px;
+          font-weight: lighter;
+          padding: 5px;
+      }
+      .right-col h3{
+          padding: 10px;
+      }
+
+      .right-col p{
+          color: #777;
+          margin: 20px 0px 70px;
+      }
+
+      .social-media{
+          display: flex;
+          margin-top: 30px;
+      }
+
+      .icon{
+          width: 100px;
+          height: 100px;
+          background: #555;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          margin-right: 20px;
+          margin-bottom: 20px;
+          border-radius: 6px;
+          overflow: hidden;
+          transition: transform 0.5s;
+      }
+
+      .icon i{
+          width: 30px;
+      }
+
+      .icon a{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 70%;
+          background: #ff1616;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          transition: 0.5s;
+      }
+
+      .icon a:hover{
+          opacity: 1;
+      }
+
+      .icon:hover{
+          transform: translateY(-5px)
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <a href="#" class="logo">Hey! it's me</a>
+        <div class="nav-links">
+          <ul>
+            <li><a href="../index.html">Bonsaic</a></li>  
+            <li><a href="aboutus.html">Go Back</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="left-sidebar"></div>
+      <div class="row">
+        <div class="left-col">
+          <img src="../images/prasan.jpg" />
+        </div>
+        <div class="right-col">
+          <h1>
+            Prasanna Bhasink Shrestha <br />
+            <hr>
+          </h1>
+          <h3>Age: 19</h3>
+          <h3>Contact: 9869375976</h3>
+          <h3>
+            Educational Background: Brihaspati Vidyasadan, Global College Of Management
+          </h3>
+          <h3>Volunteering Experience: N/A</h3>
+          <h3>Certification: Photography Certification from Rotaract Club of kathmandu University Medical School</h3>
+          <h3>Technical and Soft skills: Photography</h3>
+          <h3>Interests: Web Development and Photography</h3>
+          <hr>
+          <div class="social-media">
+            <div class="icon">
+              <i class="fab fa-facebook-f"></i>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <i class="fab fa-youtube"></i>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <i class="fab fa-instagram"></i>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+            <div class="icon">
+              <i class="fab fa-twitter"></i>
+              <a href="#">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <meta name="author" content="Shaswat Nibha Maharjan">
+    <meta name="description" content="HTML Document">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <style>
+  body{
+      color:#333332;
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, serif;
+      font-size:18px;
+      font-weight:400;
+      line-height:1.4;
+  }
+  
+  .skill li:hover{
+      background:#ce2727;
+  }
+  
+  h1{
+      color:rgba(0,0,0,.75);
+  }
+  
+  .wrapper_clearfix{
+      height:100%;
+  }
+  
+  .left{
+      background-color:rgba(0,0,0,.025);
+      border-right:1px solid rgba(0,0,0,.05);
+      float:right;
+      height:100%;
+      margin-left:-1px;
+      min-width:256px;
+      position:fixed;
+      width:33.33%; 
+  }
+  
+  .right{
+      float:right;
+      height:100%;
+      position:relative;
+      width:66.66%;
+  }
+  
+  
+  .name-hero{
+      background:rgba(0,0,0,.001);
+      bottom:0;
+      height:290px;
+      left:0;
+      margin:auto;
+      position:absolute;
+      right:0;
+      top:0;
+      width:85%;
+  }
+  
+  .me-img{
+    background:url(../images/shas.jpg) no-repeat center center ;
+    background-size:100%;
+    background-position:0px;
+    border-radius:100%;
+    height:150px;
+    margin:0 auto;
+    position:relative;
+    width:150px;
+  }
+  
+  .name-hero h1{
+    font-family:Open Sans, sans-serif;
+    font-size:1.5em;
+    text-align:center;
+  }
+  
+  .name-hero h1 em{
+    color:rgba(0,0,0,.3);
+    font-style:normal;
+    font-weight:700;
+  }
+  
+  .name-hero p{
+    color:rgba(0,0,0,.5);
+    font-size:.75em;
+    line-height:1.5;
+    margin:0 8px 0 0;
+    text-align:center;
+  }
+  
+  .name-hero .name-text{
+    margin:0 auto;
+    width:85%;
+  }
+  
+  .inner{
+    margin:0 auto;
+    max-width:975px;
+    padding:3em;
+  }
+  
+  .inner h1{
+    font-size:1.75em;
+  }
+  
+  .inner p{
+    color:rgba(0,0,0,.3);
+  }
+  
+  .inner p em{
+    color:rgba(0,0,0,.75);
+    font-style:normal;
+  }
+  
+  .inner section{
+    margin:100px auto;
+  }
+  
+  ul{
+    list-style-type:none;
+    margin-top:-10px;
+    max-width:570px;
+    padding:0;
+  }
+  
+  .skill li{
+    background:rgba(0,0,0,.75);
+    border-radius:5px;
+    display:inline-block;
+    margin:15px 15px 0 0;
+    padding:10px;
+  }
+
+  .skill li a{
+    text-decoration: none;
+    color:#FFF;
+    text-align:justify;
+  }
+  </style>
+  <body>
+    <div class="wrapper_clearfix">
+      <div class="left">
+          <div class="name-hero"> 
+            <div class="me-img"></div> 
+            <div class="name-text">  
+              <h1>Shaswat Nibha Maharjan</h1>
+              <p>Kathmandu,Nepal</p>
+              <p>shaswats.snm@gmail.com</p> 
+              <p>(+977) 9841-231231</p>
+            </div>
+          </div>
+        </div>
+       <div class="right">
+          <div class="inner">
+
+            <section>
+              <h1>Introduction</h1>
+              <p><em>Hi, I am Shaswat Nibha Maharjan. This portfolio is a showcase of my abilities and experiences. It highlights my strengths and demonstrates my commitment to excellence. It offers a glimpse into my journey as a student learning computer science and the challenges I have faced and overcome.</em></p>
+            </section>
+
+
+            <section>
+              <h1>Education</h1>
+              <p>2020 - <em>Graduated Grade 10 (SEE) from Swarnim School </em></p>
+              <p>2022 - <em>Graduated +2 Management & Computer Science (SLC) from Trinity International College</em></p>
+              <p>Current - <em>Studying BSc (Hons) Computing at Islington College</em></p>
+            </section>
+
+            <section>
+              <h1>My Skills</h1>
+              <p>1 - <em>Web Page Development</em></p>
+              <p>2 - <em>Adobe Photoshop</em></p>
+              <p>3 - <em>Adobe Premiere</em></p>
+              <p>4 - <em>HTML / CSS</em></p>
+              <p>5 - <em>php</em></p>
+              <p>6 - <em>Database Handling</em></p>
+              <p>7 - <em>Autodesk MAYA / Blender</em></p>
+            </section>
+
+            <section>
+              <h1>Work Experience</h1>
+              <p><em>Worked part time in a company doing data entry for 2 months.</em></p>
+              <p><em>Trained and Worked as a barista for 2 month at Swinging Yak in Thamel.</em></p>
+              <p></p>
+            </section>
+
+            <section>
+              <h1>My Interests</h1>
+              <p>1 - <em>Gaming</em></p>
+              <p>2 - <em>Photography</em></p>
+              <p>3 - <em>Gym / Workout</em></p>
+              <p>4 - <em>Videography</em></p>
+              <p>5 - <em>Music</em></p>
+            </section>
+
+            <section>
+              <h1>Links</h1>
+              <ul class="skill">
+                <li><a href="https://www.linkedin.com/in/shaswat-maharjan-530892256/">LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/maharjanshaswat27">Facebook</a></li>
+                <li><a href="aboutus.html">Go Back</a></li>
+              </ul>
+            </section>
+          </div>   
+        </div>
+      </div>
+  </body>
+</html>
